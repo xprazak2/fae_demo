@@ -19,7 +19,9 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'fae-rails', '~> 2.0.0'
-gem 'foundation-rails'
+gem 'foundation-rails', '~> 6.4'
+gem 'jquery-rails'
+gem 'jquery-turbolinks'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

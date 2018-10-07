@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root "static_pages#home", :page => 'home'
+
   namespace :admin do
   end
   # mount Fae below your admin namespec
