@@ -2,7 +2,7 @@
 
 .ecommerce-footer {
   background-color: $white;
-  padding: 70px 20px 40px 20px;
+  padding: 70px 20px 0px 20px;
 }
 
 .ecommerce-footer-links {
@@ -48,7 +48,7 @@
 .ecommerce-footer-bottom-bar {
   border-top: 1px solid $light-gray;
   margin-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
   padding-top: 30px;
 
   .menu > li > a {
