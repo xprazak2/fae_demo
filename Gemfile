@@ -18,7 +18,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'fae-rails', '~> 2.0.0'
+# gem 'fae-rails', '~> 2.0.0'
+gemspec :path => '../fae'
 gem 'foundation-rails', '~> 6.4'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'

@@ -31,6 +31,11 @@ Fae.setup do |config|
   #   zh: 'Chinese'
   # }
 
+  config.languages = {
+    en: 'English',
+    cs: 'Česky'
+  }
+
   ## recreate_versions
   # Triggers `Fae::Image` to recreate Carrierwave versions after save.
   # Defaults to false

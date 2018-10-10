@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-  root "static_pages#home", :page => 'home'
+  scope '(:locale)', :locale => /en|cs/ do
+    # root "static_pages#home", :page => 'home'
+    get '/' => 'static_pages#home', as: 'home'
+  end
 
   namespace :admin do
   end
