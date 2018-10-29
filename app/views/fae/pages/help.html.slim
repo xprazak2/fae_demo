@@ -1,0 +1,35 @@
+= render 'fae/shared/index_header', title: 'Need some help?', breadcrumbs: false, new_button: false
+
+section.help-section
+  article.content
+    h2 Contact Us
+    p
+      strong> Phone:
+      | 60000 0000
+      br
+      strong> Email:
+      a href="mailto:admin@admin" admin@admin.com
+      br
+      strong> Website:
+      a href="http://www.heeelp.com" target="_blank" arewefine.org
+
+  article.content
+    h2 Found A Bug?
+
+    h3 Please include this helpful information:
+    ruby:
+      help_information = {
+        'Version'  => "Fae v#{Fae::VERSION}",
+        'Date'     => Time.now,
+        'Site'     => request.url,
+        'Env'      => Rails.env,
+        'Browser'  => "#{@browser.name} #{@browser.full_version}",
+        'Platform' => @browser.platform,
+        'User ID'  => current_user.id
+      }
+
+    p
+      - help_information.each do |identifier, value|
+        strong> #{identifier}:
+        = value
+        br

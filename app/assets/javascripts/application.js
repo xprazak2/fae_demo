@@ -20,3 +20,8 @@
 $(document).on('turbolinks:load', function() {
   $(function(){ $(document).foundation(); });
 });
+
+//  foundation close mobile menu fix
+// $('a[href*=#]').click(function() {
+//     $(this).parents('.top-bar').removeClass('expanded');
+// });
