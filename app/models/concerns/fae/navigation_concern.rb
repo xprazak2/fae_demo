@@ -27,9 +27,9 @@ module Fae
       [
         item('Pages', subitems: [
           item('Home', path: fae.edit_content_block_path('home'))
-        ])
+        ]),
+       item('Products', path: admin_products_path)
       ]
     end
-
   end
 end

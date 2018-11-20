@@ -1,6 +1,6 @@
 <div class="hero-full-screen">
   <div class="middle-content-section">
-    <h1><%= @item.send("main_title_#{I18n.locale}").content %></h1>
-    <h4><%= @item.send("subtitle_#{I18n.locale}").content %></h4>
+    <h1><%= @item.send("main_title_#{I18n.locale}")&.content %></h1>
+    <h4><%= @item.send("subtitle_#{I18n.locale}")&.content %></h4>
   </div>
 </div>

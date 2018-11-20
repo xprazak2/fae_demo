@@ -1,0 +1,25 @@
+<div class="text-center">
+  <h2>Our Top Products</h2>
+  <hr>
+</div>
+
+<article class="grid-container">
+  <div class="grid-x">
+    <% @products.each_slice(3) do |slice| %>
+      <div class="medium-4 cell">
+        <% slice.each do |item| %>
+          <div class="media-object">
+            <div class="media-object-section">
+              <img class="thumbnail" src="https://placehold.it/100x100">
+            </div>
+            <div class="media-object-section">
+              <h5><%= item.name %></h5>
+              <h7><%= item.price %></h7>
+              <p><%= item.description %></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</article>

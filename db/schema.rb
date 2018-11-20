@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181007091736) do
+ActiveRecord::Schema.define(version: 20181117151013) do
 
   create_table "fae_changes", force: :cascade do |t|
     t.integer "changeable_id"
@@ -158,6 +158,16 @@ ActiveRecord::Schema.define(version: 20181007091736) do
     t.index ["reset_password_token"], name: "index_fae_users_on_reset_password_token", unique: true
     t.index ["role_id"], name: "index_fae_users_on_role_id"
     t.index ["unlock_token"], name: "index_fae_users_on_unlock_token", unique: true
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name_en"
+    t.integer "price"
+    t.string "description_en"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name_cs"
+    t.string "description_cs"
   end
 
 end
